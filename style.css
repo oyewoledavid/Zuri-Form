@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: rgb(204, 197, 197);
+  margin: 5em auto;
+}
+.main {
+  background: hsl(0, 100%, 74%) url(bg-intro-desktop.png);
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.left {
+  width: 40%;
+}
+.left > h1 {
+  width: 90%;
+  margin-bottom: 16px;
+  font-size: 50px;
+  font-weight: 700px;
+}
+.left > p {
+  width: 90%;
+  line-height: 25px;
+}
+.trial-button {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: none;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.form {
+  background: white;
+  width: 100%;
+  height: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+}
+.form > input {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 8px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+.claim-button {
+  background: hsl(154, 59%, 51%);
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 8px;
+
+  border: none;
+  box-shadow: 0 5px hsla(154, 92%, 26%, 0.726);
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+small {
+  color: gray;
+}
+h1,
+p,
+.trial-button,
+.claim-button {
+  color: white;
+}
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  body {
+    margin: auto;
+  }
+  .main {
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3em 1em 2em 1em;
+    align-items: center;
+  }
+  .left {
+    width: auto;
+  }
+  .left > h1 {
+    font-size: 25px;
+    font-weight: 400px;
+    text-align: center;
+  }
+  .left > p {
+    text-align: center;
+  }
+  .right {
+    width: auto;
+  }
+  .trial-button {
+    width: 100%;
+    height: 4em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
+}
