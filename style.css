@@ -87,11 +87,12 @@ p,
   color: white;
 }
 
-@media screen and (min-width: 375px) and (max-width: 450px) {
+@media screen and (min-width: 220px) and (max-width: 450px) {
   body {
     margin: auto;
   }
   .main {
+    background: hsl(0, 100%, 74%) url(bg-intro-mobile.png);
     margin: auto;
     flex-direction: column;
     width: 100%;
