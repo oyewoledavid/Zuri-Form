@@ -46,6 +46,9 @@ body {
   border: none;
   box-shadow: 0 5px rgba(0, 0, 0, 0.2);
 }
+.trial-button:hover {
+  cursor: pointer;
+}
 .form {
   background: white;
   width: 100%;
@@ -73,6 +76,9 @@ body {
   border: none;
   box-shadow: 0 5px hsla(154, 92%, 26%, 0.726);
 }
+.claim-button:hover {
+  cursor: pointer;
+}
 a {
   color: red;
   text-decoration: none;
@@ -87,7 +93,7 @@ p,
   color: white;
 }
 
-@media screen and (min-width: 220px) and (max-width: 450px) {
+@media screen and (min-width: 220px) and (max-width: 650px) {
   body {
     margin: auto;
   }
