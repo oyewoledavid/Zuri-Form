@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 40px;
   text-align: center;
-  background-color: hsl(248, 32%, 49%);
+  background-color: hsl(248, 32%, 49%);;
   border-radius: 5px;
   margin-bottom: 15px;
   border: none;
@@ -48,6 +48,8 @@ body {
 }
 .trial-button:hover {
   cursor: pointer;
+  background-color:hsl(248, 56%, 59%);
+  transition: 0.3s;
 }
 .form {
   background: white;
@@ -72,12 +74,13 @@ body {
   height: 40px;
   margin: 5px 0;
   border-radius: 8px;
-
   border: none;
   box-shadow: 0 5px hsla(154, 92%, 26%, 0.726);
 }
 .claim-button:hover {
   cursor: pointer;
+  background-color: hsl(154, 66%, 57%) ;
+  transition: 0.3s;
 }
 a {
   color: red;
@@ -93,7 +96,8 @@ p,
   color: white;
 }
 
-@media screen and (min-width: 220px) and (max-width: 650px) {
+
+@media screen and (max-width: 650px) {
   body {
     margin: auto;
   }
