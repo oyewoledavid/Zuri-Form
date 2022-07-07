@@ -7,12 +7,12 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background: rgb(204, 197, 197);
-  margin: 5em auto;
+  margin: 3em auto;
 }
 .main {
   background: hsl(0, 100%, 74%) url(bg-intro-desktop.png);
   margin: auto;
-  width: 90%;
+  width: 95%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 40px;
   text-align: center;
-  background-color: hsl(248, 32%, 49%);;
+  background-color: hsl(248, 32%, 49%);
   border-radius: 5px;
   margin-bottom: 15px;
   border: none;
@@ -48,25 +48,67 @@ body {
 }
 .trial-button:hover {
   cursor: pointer;
-  background-color:hsl(248, 56%, 59%);
+  background-color: hsl(248, 56%, 59%);
   transition: 0.3s;
 }
+
 .form {
   background: white;
   width: 100%;
-  height: 350px;
+  height: 100%;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 8px rgba(0, 0, 0, 0.2);
 }
-.form > input {
-  height: 40px;
-  width: 100%;
-  border-radius: 5px;
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control input {
   border: 1px solid gray;
-  padding-left: 8px;
-  margin: 8px 0;
+  border-radius: 5px;
+  display: block;
   font-weight: bold;
+  padding: 10px 20px;
+  width: 100%;
+  height: 45px;
+}
+
+.form-control.success input {
+  border-color: black;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control i {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i {
+  visibility: hidden;
+}
+
+.form-control.error i {
+  visibility: visible;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
 }
 .claim-button {
   background: hsl(154, 59%, 51%);
@@ -79,7 +121,7 @@ body {
 }
 .claim-button:hover {
   cursor: pointer;
-  background-color: hsl(154, 66%, 57%) ;
+  background-color: hsl(154, 66%, 57%);
   transition: 0.3s;
 }
 a {
@@ -96,8 +138,7 @@ p,
   color: white;
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   body {
     margin: auto;
   }
